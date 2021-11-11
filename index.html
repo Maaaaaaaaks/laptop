@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!--кодировка страницы-->
+    <meta charset="utf-8">
+    <!--заголовок страницы-->
+    <title>Top Laptop</title>    
+    <!--подключение стилей-->
+    <link href='style.css' rel='stylesheet'>
+    
+    <!--ключевые слова при поиске-->
+    <meta name="keywords" content="Купить ноутбук, закать ноутбук">
+
+    <!--краткое описание страницы-->
+    <meta name="decription" content="Магазин ноутбуков. У нас вы можете заказать себе ноутбук подобранный под определенные задачи">
+    <!--иконка в вкладке-->
+    <link rel="shortcut icon" href='file/logo.png'>
+  </head>
+
+
+  <body>
+
+    <!--шапка сайта-->
+    <header class='page-header'>
+      
+      <!--логотип и телефон компании-->
+      <div class="logo">
+        <a href="#"><img src='file/log.svg' width="120" height="120"></a>
+        <a href="tel:79098095979" class="number">7-(909)-809-59-79</a>
+      </div>
+
+      <!--название магазина-->
+      <h1 class="title">Магазин <span class="tol">Top Laptop</span></h1>
+        
+      <!--кнопка заказа звонка-->    
+      <div class="zvon">
+        <div>
+          <p>Оставьте ваш телефон и наш<br/>консультант свяжется с вами</p>
+          <form id="backPhone" name="backPhone">
+            <input name="telephone" type="Tel" maxlength="20" placeholder="Введите ваш телефон" />
+            <button type="submit" form="backPhone"> Получить консультацию </button>
+          </form>
+        </div>
+      </div>  
+    </header>
+
+    <!--полоска отделяюща шапку сайта от главного блока-->
+    <hr align="center" width="100%" size="2" color="#000000" />
+
+    <ul class="navg">
+		  <li class='navgli'><a class='navga' href="#">Главная</a></li>
+      <li class='navgli'><a class='navga' href="info.html">Информация о консультантах</a></li>
+		  <li class='navgli'><a class='navga' href="pol.html">Полезная информация</a></li>
+	  </ul>
+
+    <hr align="center" width="100%" size="2" color="#000000" />
+
+    
+
+    <div class="container_slider_css">
+      <img class="photo_slider_css" src="slider/four.png" alt="">
+      <img class="photo_slider_css" src="slider/three.png" alt="">
+      <img class="photo_slider_css" src="slider/two.png" alt="">
+      <img class="photo_slider_css" src="slider/one.png" alt="">
+    </div>
+
+    <hr align="center" width="100%" size="2" color="#000000" />
+    
+    <!--Блок с брендами которые есть в магазине-->
+    <div id='prod'>
+			<h2 class="brands-h2">Бренды, имеющиеся в магазине:</h2>
+			<div class="brands">
+				<div>
+					<img class='amg' src="brend/appl.jpeg" width="200" height="102">
+				</div>
+				<div>
+					<img class='amg' src="brend/huaw.jpeg" >
+				</div>
+				<div>
+					<img class='amg' src="brend/asus.jpeg">
+				</div>
+				<div>
+					<img class='amg' src="brend/acer.jpeg">
+				</div>
+				<div>
+					<img class='amg' src="brend/hp.jpeg">
+				</div>
+				<div>
+					<img class='amg' src="brend/lenovo.jpeg">
+				</div>
+			</div>
+		</div>
+
+    <h2 class='filr'>Каталог</h2>
+    <div id="myBtnContainer" class='filr'>
+      <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
+      <button class="btn" onclick="filterSelection('apple')"> Apple</button>
+      <button class="btn" onclick="filterSelection('huawei')"> Huawei</button>
+      <button class="btn" onclick="filterSelection('asus')"> Asus</button>
+      <button class="btn" onclick="filterSelection('acer')"> Acer</button>
+      <button class="btn" onclick="filterSelection('hp')"> HP</button>
+      <button class="btn" onclick="filterSelection('lenovo')"> Lenovo</button>
+    </div>
+
+  
+    <!--Блок с товарами-->
+    <main class="prod container">
+      
+      
+    
+      <div class="product-item filterDiv apple">
+        <img src="product/mac1.png">
+        <div class="product-list">
+          <h3>Apple MacBook Pro16<br> M1 Max/64Gb/4Tb</h3>
+            <span class="price">₽ 598990</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+
+      
+      <div class="product-item filterDiv huawei">
+        <img src="product/huaw.png">
+        <div class="product-list">
+          <h3>Huawei MateBook D16<br> AMD Ryzen 5 3500/16gb/512GB</h3>
+            <span class="price">₽ 598990</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+     
+      
+      
+      <div class="product-item filterDiv apple">
+        <img src="product/mac2.png">
+        <div class="product-list">
+          <h3>MacBook Pro Air <br> M1/8gb/128gb </h3>
+            <span class="price">₽ 98990</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+      <div class="product-item filterDiv asus">
+        <img src="product/asus3.png">
+        <div class="product-list">
+          <h3>ASUS ROG<br> AMD Ryzen 9 3300/16gb/512gb </h3>
+            <span class="price">₽ 144990</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+ 
+      <div class="product-item filterDiv hp">
+        <img src="product/hp.png">
+        <div class="product-list">
+          <h3>HP Pavilion<br> Intel Core I5 3300/8gb/512gb </h3>
+            <span class="price">₽ 64990</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+
+      
+      <div class="product-item filterDiv asus">
+        <img src="product/asus1.png">
+        <div class="product-list">
+          <h3>ASUS ROG<br> AMD Ryzen 7 3900/32gb/1Tb </h3>
+            <span class="price">₽ 194990</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+      
+      
+      <div class="product-item filterDiv lenovo">
+        <img src="product/len1.png">
+        <div class="product-list">
+          <h3>Lenovo ideaPad 5 Pro<br> Intel Core I7 11250/16gb/512gb </h3>
+            <span class="price">₽ 99990</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+
+      
+      <div class="product-item filterDiv apple">
+        <img src="product/mac3.png">
+        <div class="product-list">
+          <h3>Apple MacBook Pro 15 2019<br> Intel Core I9/16gb/512gb </h3>
+            <span class="price">₽ 164590</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+
+      
+      <div class="product-item filterDiv lenovo">
+        <img src="product/len2.png">
+        <div class="product-list">
+          <h3>Lenovo Legion 5 Pro<br> AMD Ryzen 5 5600H/16gb/512gb </h3>
+            <span class="price">₽ 134590</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+
+      
+      <div class="product-item filterDiv hp">
+        <img src="product/hp1.png">
+        <div class="product-list">
+          <h3>HP ENVY 13<br> Intel Core I5 1135/8gb/256gb </h3>
+            <span class="price">₽ 74890</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+      
+      
+      <div class="product-item filterDiv huawei">
+        <img src="product/huaw1.png">
+        <div class="product-list">
+          <h3>Huawei MateBook X Pro<br> Intel Core I9 1175/16gb/512gb </h3>
+            <span class="price">₽ 128990</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+
+      
+      <div class="product-item filterDiv acer">
+        <img src="product/acer.png">
+        <div class="product-list">
+          <h3>Acer Predator Helios 500<br> Intel Core I9 11980/32gb/2Tb </h3>
+            <span class="price">₽ 349900</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+      
+      
+      <!--подключаем javascript для фильтра-->
+    <script src="filtr.js"></script>
+    </main>  
+
+      <br><br><br><br><br><br><br>
+
+    <!--подвал сайта-->
+    <footer class='pod'>
+      <div>
+        <span>Top Laptop - это современный магазин ноутбуков,<br> где продаются только свежие и актуальные новинки </span><br><br>
+        <span>Мы находимся по адресу: г. Москва, ул.Ленинградская 58</span><br><br>
+        <span>toplaptop2021@mail.ru</span><br><br>
+        <span class="prav">Все права защищены корпорацией</span>
+        <span class='prav'>"Borisov Entertainment"</span>
+      </div>
+
+        <div class='mail'>            
+            <h3>Подписка на новости</h3>
+            <p>
+               При оформлении Email рассылки вы будете получать<br> информацию о новинках нашего магазина
+            </p>
+            <div style="display: none;"></div>
+            <form>
+                <div>
+                    <input type="text" placeholder="Введите e-mail">
+                    <input type="submit" value="Подписаться">
+                </div>
+            </form>
+        </div>
+      </div>
+      
+    </footer>
+    
+    <!--код для работы кнопки-->
+    <a href="#" title="Вернуться к началу страницы" class="topNubex"><img src="file/ver.png" width="45p" height="45px"></a>
+  </body>
+</html>
+
+

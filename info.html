@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!--кодировка страницы-->
+    <meta charset="utf-8">
+    <!--заголовок страницы-->
+    <title>Информация о консультантах</title>    
+    <!--подключение стилей-->
+    <link href='style.css' rel='stylesheet'>
+    
+    <!--ключевые слова при поиске-->
+    <meta name="keywords" content="Купить ноутбук, закать ноутбук">
+
+    <!--краткое описание страницы-->
+    <meta name="decription" content="Магазин ноутбуков. У нас вы можете заказать себе ноутбук подобранный под определенные задачи">
+    <link rel="shortcut icon" href='file/logo.png'>
+  </head>
+
+
+  <body>
+
+    <!--шапка сайта-->
+    <header class='page-header'>
+      
+      <!--логотип и телефон компании-->
+      <div class="logo">
+        <a href="#"><img src='file/log.svg' width="120" height="120"></a>
+        <a href="tel:79098095979" class="number">7-(909)-809-59-79</a>
+      </div>
+
+      <!--название магазина-->
+      <h1 class="title">Магазин <span class="tol">Top Laptop</span></h1>
+        
+      <!--кнопка заказа звонка-->    
+      <div class="zvon">
+        <div>
+          <p>Оставьте ваш телефон и наш<br/>консультант свяжется с вами</p>
+          <form id="backPhone" name="backPhone">
+            <input name="telephone" type="Tel" maxlength="20" placeholder="Введите ваш телефон" />
+            <button type="submit" form="backPhone"> Получить консультацию </button>
+          </form>
+        </div>
+      </div>  
+    </header>
+
+    <!--полоска отделяюща шапку сайта от главного блока-->
+    <hr align="center" width="100%" size="2" color="#000000" />
+
+    <ul class="navg">
+		  <li class='navgli'><a class='navga' href="index.html">Главная</a></li>
+      <li class='navgli'><a class='navga' href="#">Информация о консультантах</a></li>
+		  <li class='navgli'><a class='navga' href="pol.html">Полезная информация</a></li>
+	  </ul>
+
+    <hr align="center" width="100%" size="2" color="#000000" />
+
+    <h2 class="kinfo">Наши консультанты:</h2>
+    <!--Блок с товарами-->
+    <main class="kinfo">
+      
+      <div class="kon"> 
+        <img src="kon/m1.jpeg" alt="" width="400px" height="600px">
+        <div class="konsl">
+          <h3>Павел Андреевич</h3>
+          <p>Павел Андреевич является нашим главным консультантом. О его заслугах можно
+            говорить бесконечно. Он самый настоящий трудоголик.<br>
+            Всего за год он смог стать главным менеджером по продажам, а начинал он 
+            всего лишь с обычного сотрудника склада
+          </p>
+        </div>
+      </div>
+
+      <div class="kon"> 
+        <img src="kon/g3.jpeg" alt="" width="400px" height="600px">
+        <div class="konsl">
+          <h3>Ангелина Викторовна</h3>
+          <p>Ангелина Викторовна является не только нашим консультантом,
+            но и директором маркетинга. Благодаря ей о нас узнают с каждым днём 
+            всё больше и больше людей и наша компания развивается только потому что она 
+            является нашим сотрудником
+          </p>
+        </div>
+      </div>
+      
+    </main>
+
+
+      <br><br><br><br><br><br><br>
+
+    <!--подвал сайта-->
+    <footer class='pod'>
+      <div>
+        <span>Top Laptop - это современный магазин ноутбуков,<br> где продаются только свежие и актуальные новинки </span><br><br>
+        <span>Мы находимся по адресу: г. Москва, ул.Ленинградская 58</span><br><br>
+        <span>toplaptop2021@mail.ru</span><br><br>
+        <span class="prav">Все права защищены корпорацией</span>
+        <span class='prav'>"Borisov Entertainment"</span>
+      </div>
+
+        <div class='mail'>            
+            <h3>Подписка на новости</h3>
+            <p>
+               При оформлении Email рассылки вы будете получать<br> информацию о новинках нашего магазина
+            </p>
+            <div style="display: none;"></div>
+            <form>
+                <div>
+                    <input type="text" placeholder="Введите e-mail">
+                    <input type="submit" value="Подписаться">
+                </div>
+            </form>
+        </div>
+      </div>
+      
+    </footer>
+    
+    <!--код для работы кнопки-->
+    <a href="#" title="Вернуться к началу страницы" class="topNubex"><img src="file/ver.png" width="45p" height="45px"></a>
+  </body>
+</html>
+
+
